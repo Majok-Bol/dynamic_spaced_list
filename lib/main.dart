@@ -8,10 +8,10 @@ class MyApp extends StatelessWidget{
     const items=15;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        // colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        cardTheme: CardThemeData(color: Colors.orange),
-      ),
+      // theme: ThemeData(
+      //   // colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+      //   // cardTheme: CardThemeData(color: Colors.grey[300]),
+      // ),
       home: Scaffold(
         appBar: AppBar(title: Text('List items with space',style: TextStyle(color: Colors.white,fontSize: 25),),centerTitle: true,backgroundColor: Colors.purple,),
         body: LayoutBuilder(builder:(context,constraints){
@@ -34,6 +34,6 @@ class ItemWidget extends StatelessWidget{
   final String text;
   @override
   Widget build(BuildContext context){
-    return Card(child: SizedBox(height:100,child:Center(child:  Text(text),),),);
+    return Card(child: SizedBox(height:100,child:Center(child:  Text(text,style: TextStyle(fontSize: 25),),),),color: Colors.blueGrey,);
   }
 }
