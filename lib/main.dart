@@ -7,7 +7,9 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context){
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(),
+      home: Scaffold(
+        appBar: AppBar(title: Text('List items with space'),),
+      ),
     );
   }
 }
