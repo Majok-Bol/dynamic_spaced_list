@@ -5,9 +5,13 @@ void main(){
 class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context){
-    const items=5;
+    const items=15;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        // colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        cardTheme: CardThemeData(color: Colors.orange),
+      ),
       home: Scaffold(
         appBar: AppBar(title: Text('List items with space',style: TextStyle(color: Colors.white,fontSize: 25),),centerTitle: true,backgroundColor: Colors.purple,),
         body: LayoutBuilder(builder:(context,constraints){
